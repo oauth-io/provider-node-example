@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html  lang="en" ng-app="dev-portal" ng-csp="">
+	<head>
+		<title>Developer portal</title>
+		<link rel="stylesheet" href="/style/main.css">
+	</head>
+	<body>
+		<div class="nav">
+		<h4>Provider Developer Portal</h4>
+		<a ui-sref="app-list" class="app-list">My apps</a>
+		<a ui-sref="app-creation" class="app-creation">Create an app</a>
+		</div>
+		<div ui-view></div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+        <script src="/libs/bootstrap-3.1.1/js/bootstrap.js"></script>
+		<script src="/libs/angular-ui-router.min.js"></script>
+		<script src="/app/app.js"></script>
+	</body>
+</html>

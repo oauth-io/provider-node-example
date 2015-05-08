@@ -1,0 +1,25 @@
+<h3>{{ app.name }}</h3>
+<div class="whitish">
+	{{ app.description }}
+</div>
+
+<h4>Client id</h4>
+<div class="alert alert-success whitish">
+	{{ app.client_id }}
+</div>
+
+<h4>Client secret</h4>
+<div class="alert alert-success whitish">
+	{{ app.client_secret }}
+</div>
+
+<h4>Redirect URI</h4>
+<div class="alert alert-success whitish">
+	{{ app.redirectUri }}
+</div>
+
+<div class="button-group">
+	<a class="btn whitish btn-warning" ui-sref="app-edition({ id: app.id })">Edit app</a>
+	<a href="javascript:void(0);" class="whitish btn btn-warning" ng-click="resetKeys()">Reset keys</a>
+	<a href="javascript:void(0);" class="whitish btn btn-danger reddish" ng-click="deleteApp()">Delete app</a>
+</div>

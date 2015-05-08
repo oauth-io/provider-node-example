@@ -1,0 +1,10 @@
+<div class="app-list">
+    <h3>My apps</h3>
+    <ul class="">
+        <li class="app-item" ng-repeat="app in apps" >
+            <a class="whitish" ui-sref="app-info({ id: app.id })">
+            {{ app.name }}
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Authorize this app on Provider</title>
+        <link rel="stylesheet" href="/style/main.css">
+        <link rel="stylesheet" href="/style/decision.css">
+    </head>
+    <body>
+        Hello <%= user.name %>, <%= client.name %> would like to access your account's following information:
+        <ul>
+            <% for (var k in scope) { %>
+            <ul><%= scope[k] %></ul>
+            <% } %>
+        </ul>
+
+        <form method="POST">
+            <input type="hidden" name="decision" value="1" />
+            <input type="submit" value="Authorize" />
+        </form>
+        <form method="POST">
+            <input type="hidden" name="decision" value="0" />
+            <input type="submit" value="Cancel" />
+        </form>
+    </body>
+</html>

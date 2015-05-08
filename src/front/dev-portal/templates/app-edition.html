@@ -1,0 +1,18 @@
+<form action="javascript:void(0);">
+	<div>
+		<input type="text" placeholder="App name" class="whitish" ng-model="app.name">
+	</div>
+
+	<div>
+		<textarea placeholder="App description"  class="whitish" ng-model="app.description"></textarea>
+	</div>
+
+	<div>
+		<input type="text" placeholder="App redirect URI" class="whitish" ng-model="app.redirectUri">
+	</div>
+	<div class="button-group">
+		<a ui-sref="app-info({ id: app.id })" ng-click="updateApp()" class="whitish">Cancel</a>
+		<a href="javascript:void" ng-click="updateApp()" class="whitish">Edit app</a>
+	</div>
+
+</form>

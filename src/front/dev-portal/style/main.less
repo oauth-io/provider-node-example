@@ -1,0 +1,112 @@
+body {
+	background: #6DA4A6;
+	font-family: Helvetica;
+	width: 800px;
+	margin: auto;
+}
+
+@lightgray: rgba(240, 240, 240, 1);
+@darkgray: rgba(220, 220, 220, 1);
+
+.nav {
+	height: 50px;
+	line-height: 25px;
+	margin-bottom: 25px;
+	h4 {
+		margin: 0;
+	}
+	a {
+		color: @darkgray;
+		text-decoration: none;
+		&:hover {
+			color: @lightgray;
+		}
+		&.active {
+			color: white;
+			text-shadow: 0 0 5px white;
+		}
+	}
+}
+
+form {
+	
+	width: -webkit-fit-content;
+	input, textarea {
+		font-size: 0.9em;
+		width: 250px;
+		
+		margin: 0;
+		margin-bottom: 10px;
+		outline: none;
+		&:focus {
+			background: white;
+			box-shadow: 0 0 5px rgba(0,0,0,0.5);
+		}
+		&:hover {
+			background: white;
+			box-shadow: 0 0 5px rgba(0,0,0,0.5);
+		}
+	}
+	textarea {
+		height: 75px;
+	}
+}
+
+.whitish {
+	padding: 10px;
+	border: none;
+	background-color: @lightgray;
+	resize: none;
+	color: black;
+	text-decoration: none;
+}
+a.whitish {
+	&:hover {
+		background: white;
+		box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	}
+}
+
+.reddish {
+	background-color: rgb(210, 113, 113);
+	color: white;
+
+}
+
+a.reddish {
+	&:hover {
+		background: rgb(230, 113, 113);
+		box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	}
+}
+
+.alert {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.button-group {
+	margin-top: 40px;
+}
+
+.app-list {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	.app-item {
+		margin: 0;
+		display: block;
+		float: left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+		a {
+			display: block;
+			width: 150px;
+		}
+	}
+}
+
+@import './login';
+@import './decision';
